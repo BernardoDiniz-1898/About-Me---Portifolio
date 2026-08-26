@@ -1,14 +1,322 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio Bernardo</title>
+    <title>Bernardo Diniz | Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="nav-brand">BD</div>
+        <ul class="nav-links">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#experience">Experiência</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
 
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">Olá, eu sou</p>
+            <h1 class="hero-name">Bernardo Diniz</h1>
+            <h2 class="hero-title">Técnico em <span class="highlight">Análise e Desenvolvimento de Sistemas</span></h2>
+            <p class="hero-description">Profissional de TI em Belo Horizonte, MG. Formado em Análise e Desenvolvimento de Sistemas pelo SENAI, apaixonado por tecnologia e sempre em busca de novos desafios na área de desenvolvimento.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Entre em Contato</a>
+                <a href="#about" class="btn btn-secondary">Saiba Mais</a>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <div class="code-block">
+                <pre><code><span class="code-keyword">const</span> <span class="code-var">desenvolvedor</span> = {
+  <span class="code-prop">nome</span>: <span class="code-string">"Bernardo Diniz"</span>,
+  <span class="code-prop">formacao</span>: <span class="code-string">"ADS - SENAI"</span>,
+  <span class="code-prop">stack</span>: [<span class="code-string">"Python"</span>, <span class="code-string">"PHP"</span>, <span class="code-string">"Git"</span>],
+  <span class="code-prop">local</span>: <span class="code-string">"Belo Horizonte"</span>
+};</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Sou um profissional de 19 anos, natural de Belo Horizonte - MG, <strong>formado em Técnico em Análise e Desenvolvimento de Sistemas</strong> pelo SENAI.</p>
+                    <p>Meu objetivo é sempre estar trabalhando em boas empresas e ajudando todos ao meu redor, me qualificando cada vez mais na minha área. Tenho experiência profissional em diferentes áreas, o que me deu uma visão ampla do mercado de trabalho e habilidades de comunicação e trabalho em equipe.</p>
+                    <p>No momento, atuo como <strong>Assistente de TI</strong> na Chammas Engenharia, onde evoluí de Jovem Aprendiz e Estagiário para esta posição, aplicando e expandindo meus conhecimentos técnicos no dia a dia.</p>
+                    <p>Meu objetivo é ingressar em <strong>Ciência da Computação na UFMG</strong>, continuando minha evolução na área de tecnologia.</p>
+                </div>
+                <div class="about-info">
+                    <div class="info-card">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <strong>Localização</strong>
+                            <p>Belo Horizonte - MG</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon">🎓</span>
+                        <div>
+                            <strong>Formação</strong>
+                            <p>Técnico em ADS - SENAI ✓</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon">💼</span>
+                        <div>
+                            <strong>Experiência</strong>
+                            <p>Assistente de TI</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon">🎂</span>
+                        <div>
+                            <strong>Idade</strong>
+                            <p>19 anos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experiência Profissional</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Atual</span>
+                            <span class="timeline-type">CLT</span>
+                        </div>
+                        <h3>Assistente de T.I</h3>
+                        <h4>Chammas Engenharia</h4>
+                        <p>Atuação na área de Tecnologia da Informação, evoluindo de Jovem Aprendiz e Estagiário para esta posição.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">2025</span>
+                            <span class="timeline-type">Estágio</span>
+                        </div>
+                        <h3>Estagiário de T.I</h3>
+                        <h4>Chammas Engenharia</h4>
+                        <p>Estágio durante o curso técnico no SENAI, desenvolvendo habilidades e ganhando experiência prática em TI.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">2025</span>
+                            <span class="timeline-type">Jovem Aprendiz</span>
+                        </div>
+                        <h3>Jovem Aprendiz de T.I</h3>
+                        <h4>Chammas Engenharia</h4>
+                        <p>Início da trajetória em TI, desenvolvendo habilidades técnicas e ganhando experiência profissional.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Mar 2025 - Mai 2025</span>
+                            <span class="timeline-type">Vendas</span>
+                        </div>
+                        <h3>Vendedor</h3>
+                        <h4>Imperio Conect Assistência e Acessórios</h4>
+                        <p>Receber e organizar produtos, vender, atender e auxiliar clientes. Desenvolvimento de habilidades de comunicação e atendimento ao público.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Mar 2024 - Out 2024</span>
+                            <span class="timeline-type">Operacional</span>
+                        </div>
+                        <h3>Auxiliar e Lavador</h3>
+                        <h4>Studio MD</h4>
+                        <p>Lavar e dar acabamento por dentro e por fora, desmontar e lavar bancos e atender clientes. Experiência em trabalho manual e atendimento ao cliente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <h3>Python</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="75"></div>
+                    </div>
+                    <span class="skill-text">Médio/Avançado</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-php"></i></div>
+                    <h3>PHP / Laravel</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="60"></div>
+                    </div>
+                    <span class="skill-text">Nível Médio</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-linux"></i></div>
+                    <h3>Linux</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="55"></div>
+                    </div>
+                    <span class="skill-text">Conhecimento Médio</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-file-alt"></i></div>
+                    <h3>Documentação</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="70"></div>
+                    </div>
+                    <span class="skill-text">Diagramas & Modelagem</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Análise de Dados</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="40"></div>
+                    </div>
+                    <span class="skill-text">Nível Básico</span>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                    <h3>Git / GitHub</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar" data-level="65"></div>
+                    </div>
+                    <span class="skill-text">Médio</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <p class="contact-subtitle">Estou disponível para oportunidades e parcerias. Entre em contato!</p>
+            <div class="contact-grid">
+                <a href="mailto:dinizbernardo53@gmail.com" class="contact-card">
+                    <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                    <h3>Email</h3>
+                    <p>dinizbernardo53@gmail.com</p>
+                </a>
+                <a href="https://wa.me/5531994910360" target="_blank" class="contact-card">
+                    <span class="contact-icon"><i class="fab fa-whatsapp"></i></span>
+                    <h3>WhatsApp</h3>
+                    <p>(31) 99491-0360</p>
+                </a>
+                <div class="contact-card">
+                    <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                    <h3>Localização</h3>
+                    <p>Belo Horizonte - MG</p>
+                </div>
+                <a href="https://github.com/" target="_blank" class="contact-card">
+                    <span class="contact-icon"><i class="fab fa-github"></i></span>
+                    <h3>GitHub</h3>
+                    <p>Meu GitHub</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Bernardo Diniz. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.skill-card, .timeline-item, .info-card, .contact-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        document.querySelectorAll('.skill-bar').forEach(bar => {
+            const level = bar.getAttribute('data-level');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        bar.style.width = level + '%';
+                    }
+                });
+            }, { threshold: 0.5 });
+            observer.observe(bar);
+        });
+
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 
 </html>
