@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Bernardo Diniz, Assistente de TI em Belo Horizonte - MG. Formado em Análise e Desenvolvimento de Sistemas pelo SENAI, com experiência em Python, PHP/Laravel, Linux e Git.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23dc2626'/%3E%3Ctext x='50' y='55' font-family='Arial' font-size='45' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='middle'%3EBD%3C/text%3E%3C/svg%3E">
     <title>Bernardo Diniz | Portfólio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -105,7 +107,7 @@
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
-                            <span class="timeline-date">Atual</span>
+                            <span class="timeline-date">2025 – Atual</span>
                             <span class="timeline-type">CLT</span>
                         </div>
                         <h3>Assistente de T.I</h3>
@@ -296,16 +298,20 @@
             observer.observe(el);
         });
 
-        document.querySelectorAll('.skill-bar').forEach(bar => {
-            const level = bar.getAttribute('data-level');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        bar.style.width = level + '%';
+        const skillObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const bar = entry.target.querySelector('.skill-bar');
+                    if (bar) {
+                        bar.style.width = bar.getAttribute('data-level') + '%';
                     }
-                });
-            }, { threshold: 0.5 });
-            observer.observe(bar);
+                    skillObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.skill-level').forEach(level => {
+            skillObserver.observe(level);
         });
 
         window.addEventListener('scroll', () => {

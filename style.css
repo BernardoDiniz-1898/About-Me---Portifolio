@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--primary-light);
+    outline-offset: 3px;
+    border-radius: 6px;
+}
+
 :root {
     --primary: #dc2626;
     --primary-dark: #b91c1c;
@@ -23,6 +30,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 body {
@@ -195,12 +203,12 @@ body {
 .btn-primary {
     background: var(--gradient-1);
     color: white;
-    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+    box-shadow: 0 6px 20px rgba(220, 38, 38, 0.5);
 }
 
 .btn-secondary {
@@ -211,7 +219,7 @@ body {
 
 .btn-secondary:hover {
     border-color: var(--primary);
-    background: rgba(99, 102, 241, 0.1);
+    background: rgba(220, 38, 38, 0.1);
 }
 
 .hero-decoration {
@@ -416,7 +424,7 @@ body {
 
 .timeline-type {
     font-size: 0.75rem;
-    background: rgba(99, 102, 241, 0.15);
+    background: rgba(220, 38, 38, 0.15);
     color: var(--primary-light);
     padding: 4px 10px;
     border-radius: 20px;
