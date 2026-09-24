@@ -23,6 +23,7 @@
             <li><a href="#about">Sobre</a></li>
             <li><a href="#experience">Experiência</a></li>
             <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Projetos</a></li>
             <li><a href="#contact">Contato</a></li>
         </ul>
         <button class="menu-toggle" aria-label="Menu">
@@ -208,7 +209,7 @@
                     <div class="skill-level">
                         <div class="skill-bar" data-level="70"></div>
                     </div>
-                    <span class="skill-text">Diagramas & Modelagem</span>
+                    <span class="skill-text">Diagramas & Modelagem de Sistemas</span>
                 </div>
 
                 <div class="skill-card">
@@ -241,6 +242,89 @@
         </div>
     </section>
 
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projetos</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-visual" aria-hidden="true">
+                        <i class="fas fa-chart-line"></i>
+                        <span>IoT</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-status">Projeto acadêmico</span>
+                        <h3>Dashboard Posto 2</h3>
+                        <p>Protótipo desenvolvido no SENAI para monitorar dados recebidos de um sistema IoT e seus sensores em um dashboard centralizado.</p>
+                        <ul class="project-techs">
+                            <li>Laravel</li>
+                            <li>PHP</li>
+                            <li>Blade</li>
+                            <li>IoT</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/BernardoDiniz-1898/dashboard-posto2" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                                Ver código
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual project-visual-web" aria-hidden="true">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>WEB</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-status">Publicado</span>
+                        <h3>Meu Portfólio</h3>
+                        <p>Landing page responsiva criada para apresentar perfil, trajetória profissional, habilidades técnicas e canais de contato.</p>
+                        <ul class="project-techs">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>GitHub Pages</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/BernardoDiniz-1898/Meu-Portifolio" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                                Ver código
+                            </a>
+                            <a href="https://bernardodiniz-1898.github.io/Meu-Portifolio/" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">
+                                <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                Acessar site
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual" aria-hidden="true">
+                        <i class="fas fa-boxes-stacked"></i>
+                        <span>ITAM</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-status">Projeto pessoal</span>
+                        <h3>Keep Inventory</h3>
+                        <p>Sistema de gestão de ativos corporativos: inventário de notebooks, funcionários, grupos e localizações, com RBAC, dashboard gerencial, exportação Excel, log de atividades e conformidade ISO 27001.</p>
+                        <ul class="project-techs">
+                            <li>Laravel</li>
+                            <li>PHP</li>
+                            <li>Blade</li>
+                            <li>Tailwind CSS</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/BernardoDiniz-1898/Projeto-Inventario-de-Ativos-Corporativo" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                                Ver código
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Contato</h2>
@@ -256,12 +340,13 @@
                     <h3>WhatsApp</h3>
                     <p>(31) 99491-0360</p>
                 </a>
-                <div class="contact-card">
-                    <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
-                    <h3>Localização</h3>
-                    <p>Belo Horizonte - MG</p>
-                </div>
-                <a href="https://github.com/" target="_blank" class="contact-card">
+
+                <a href="https://www.linkedin.com/in/bernardo-diniz-275442356" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <span class="contact-icon"><i class="fab fa-linkedin"></i></span>
+                    <h3>LinkedIn</h3>
+                    <p>Meu LinkedIn</p>
+                </a>
+                <a href="https://github.com/BernardoDiniz-1898" target="_blank" rel="noopener noreferrer" class="contact-card">
                     <span class="contact-icon"><i class="fab fa-github"></i></span>
                     <h3>GitHub</h3>
                     <p>Meu GitHub</p>
@@ -303,7 +388,7 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.skill-card, .timeline-item, .info-card, .contact-card').forEach(el => {
+        document.querySelectorAll('.skill-card, .timeline-item, .info-card, .project-card, .contact-card').forEach(el => {
             observer.observe(el);
         });
 
